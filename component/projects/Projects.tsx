@@ -170,22 +170,22 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Nebula AI Dashboard",
-      description: "Real-time analytics dashboard for AI model performance metrics, featuring interactive charts and model comparison tools.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format",
-      tags: ["React", "D3.js", "TensorFlow.js", "Tailwind"],
+      title: "MPC Promo system",
+      description: "MPC Promo System is a digital promotional campaign management platform that generates unique promo codes and printable promo cards for customers. Users can submit these promo codes to the company for validation, and after successful verification, rewards are provided through mobile reloads or direct bank transfers based on the customer’s preference. The system also includes secure code validation, campaign tracking, user management, and real-time reporting features to ensure an efficient and reliable promotional process.",
+      image: "/MPC.png",
+      tags: ["React", "MongoDb", "express", "Tailwind"],
       github: "https://github.com/example/nebula-ai",
       live: "https://nebula-ai-demo.vercel.app",
       featured: true
     },
     {
       id: 2,
-      title: "Artisan Market",
+      title: "Aqua Engineering & Constructions (Pvt)Ltd Official website",
       description: "E-commerce platform connecting local artisans with global buyers, featuring secure payments and inventory management.",
-      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&auto=format",
-      tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+      image: "/aqua.png",
+      tags: ["Wordpress","PHP","Elementor","Custom CSS","JS"],
       github: "https://github.com/example/artisan-market",
-      live: "https://artisan-market-demo.vercel.app",
+      live: "https://www.aquaengineering.lk",
       featured: false
     },
     {
@@ -232,11 +232,9 @@ export default function Projects() {
 
   // Partner companies data – replace with your actual logos and names
   const partners = [
-    { name: "Cyber Mas Solutions", logo: "/Cyber mas solutions.png", url: "https://cybermas.com" },
-    { name: "Verlixtech", logo: "/verlixtech.png", url: "https://verlixtech.com" },
-    { name: "Sri Lanka Ports Authority", logo: "/img3.png", url: "https://slpa.lk" },
-    { name: "Tech Innovate", logo: "/tech-innovate.png", url: "https://techinnovate.com" }, // example
-    { name: "CodeCanvas", logo: "/codecanvas.png", url: "https://codecanvas.com" }, // example
+    { name: "Madhushika Paints and Chemical(Pvt) Ltd", logo: "/MPC-logo.png", url: "https://cybermas.com" },
+    { name: "Aquaengineering & Construction (Pvt)Ltd", logo: "/aqua-logo.png", url: "https://verlixtech.com" },
+    
   ];
 
   return (
