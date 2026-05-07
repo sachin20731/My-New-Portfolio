@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BackgroundElements() {
     return (
-        <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden text-[#57528C] text-sm opacity-90 italic font-mono">
+        <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden text-[#57528C] text-sm opacity-100 italic font-mono">
             <span className="absolute top-10 left-10 animate-float">&lt;html&gt;</span>
             <span className="absolute top-20 left-16 animate-float-delayed">&lt;body&gt;</span>
             <span className="absolute top-48 left-20 animate-float">&lt;h1&gt;</span>
