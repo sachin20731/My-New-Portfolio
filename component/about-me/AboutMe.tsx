@@ -451,6 +451,7 @@
 "use client";
 import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 
 // Define the cubic-bezier array as a const assertion → becomes readonly [0.22, 1, 0.36, 1]
 const slowEase = [0.22, 1, 0.36, 1] as const;
@@ -752,11 +753,46 @@ export default function AboutMe() {
               variants={fadeInUp(1.8)}
               className="flex flex-wrap justify-center md:justify-start gap-4 mt-6 items-center"
             >
-              <img src="/java.png" alt="Java" className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition" />
-              <img src="/next.png" alt="Next.js" className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition" />
-              <img src="/aws.png" alt="AWS" className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition" />
-              <img src="/grafana.png" alt="Grafana" className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition" />
-              <img src="/github.png" alt="GitHub" className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition" />
+
+                <Image
+                  src="/java.png"
+                  alt="Java"
+                  width={32}
+                  height={32}
+                  className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition"
+                />
+
+                <Image
+                  src="/next.png"
+                  alt="Next.js"
+                  width={32}
+                  height={32}
+                  className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition"
+                />
+
+                <Image
+                  src="/aws.png"
+                  alt="AWS"
+                  width={32}
+                  height={32}
+                  className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition"
+                />
+
+                <Image
+                  src="/grafana.png"
+                  alt="Grafana"
+                  width={32}
+                  height={32}
+                  className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition"
+                />
+
+                <Image
+                  src="/github.png"
+                  alt="GitHub"
+                  width={32}
+                  height={32}
+                  className="w-6 h-6 md:w-8 md:h-8 opacity-80 hover:opacity-100 transition"
+                />
             </motion.div>
           </div>
 
