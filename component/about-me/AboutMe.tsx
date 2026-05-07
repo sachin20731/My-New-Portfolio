@@ -449,66 +449,38 @@
 
 
 "use client";
-
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
-const slowEase: [number, number, number, number] = [0.22, 1, 0.36, 1];
+// Define the cubic-bezier array as a const assertion → becomes readonly [0.22, 1, 0.36, 1]
+const slowEase = [0.22, 1, 0.36, 1] as const;
 
-const verticalLine = (delay: number, height: number | string) => ({
+// Helper to create transition objects with the correct ease type
+const transition = (duration: number, delay: number) => ({
+  duration,
+  delay,
+  ease: slowEase, // TypeScript now sees this as readonly [number, number, number, number]
+});
+
+// Define each variant as a proper Variants object (no inline function return)
+const fadeInUp = (delay: number): Variants => ({
+  hidden: { opacity: 0, y: 25 },
+  visible: { opacity: 1, y: 0, transition: transition(0.8, delay) },
+});
+
+const scaleIn = (delay: number): Variants => ({
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: { opacity: 1, scale: 1, transition: transition(0.6, delay) },
+});
+
+const verticalLine = (delay: number, height: number | string): Variants => ({
   hidden: { height: 0 },
-  visible: {
-    height,
-    transition: {
-      duration: 1,
-      delay,
-      ease: slowEase as [number, number, number, number],
-    },
-  },
+  visible: { height, transition: transition(1, delay) },
 });
 
-const horizontalLine = (delay: number, width: string) => ({
+const horizontalLine = (delay: number, width: string): Variants => ({
   hidden: { scaleX: 0 },
-  visible: {
-    scaleX: 1,
-    transition: {
-      duration: 0.9,
-      delay,
-      ease: slowEase as [number, number, number, number],
-    },
-  },
-});
-
-const fadeInUp = (delay: number) => ({
-  hidden: {
-    opacity: 0,
-    y: 25,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      delay,
-      ease: slowEase as [number, number, number, number],
-    },
-  },
-});
-
-const scaleIn = (delay: number) => ({
-  hidden: {
-    opacity: 0,
-    scale: 0.95,
-  },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.6,
-      delay,
-      ease: slowEase as [number, number, number, number],
-    },
-  },
+  visible: { scaleX: 1, transition: transition(0.9, delay) },
 });
 
 export default function AboutMe() {
