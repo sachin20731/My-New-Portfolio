@@ -5,26 +5,84 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const slowEase = [0.22, 1, 0.36, 1] as const;
+// const slowEase = [0.22, 1, 0.36, 1] as const;
 
-const verticalLine = (delay: number, height: number) => ({
+// const verticalLine = (delay: number, height: number) => ({
+//   hidden: { height: 0 },
+//   visible: { height, transition: { duration: 1, delay, ease: slowEase } },
+// });
+
+// const horizontalLine = (delay: number, width: string) => ({
+//   hidden: { scaleX: 0 },
+//   visible: { scaleX: 1, transition: { duration: 0.9, delay, ease: slowEase } },
+// });
+
+// const fadeInUp = (delay: number) => ({
+//   hidden: { opacity: 0, y: 25 },
+//   visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay, ease: slowEase } },
+// });
+
+// const scaleIn = (delay: number) => ({
+//   hidden: { opacity: 0, scale: 0.95 },
+//   visible: { opacity: 1, scale: 1, transition: { duration: 0.6, delay, ease: slowEase } },
+// });
+
+const slowEase: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
+const verticalLine = (delay: number, height: number | string) => ({
   hidden: { height: 0 },
-  visible: { height, transition: { duration: 1, delay, ease: slowEase } },
+  visible: {
+    height,
+    transition: {
+      duration: 1,
+      delay,
+      ease: slowEase as [number, number, number, number],
+    },
+  },
 });
 
 const horizontalLine = (delay: number, width: string) => ({
   hidden: { scaleX: 0 },
-  visible: { scaleX: 1, transition: { duration: 0.9, delay, ease: slowEase } },
+  visible: {
+    scaleX: 1,
+    transition: {
+      duration: 0.9,
+      delay,
+      ease: slowEase as [number, number, number, number],
+    },
+  },
 });
 
 const fadeInUp = (delay: number) => ({
-  hidden: { opacity: 0, y: 25 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay, ease: slowEase } },
+  hidden: {
+    opacity: 0,
+    y: 25,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      delay,
+      ease: slowEase as [number, number, number, number],
+    },
+  },
 });
 
 const scaleIn = (delay: number) => ({
-  hidden: { opacity: 0, scale: 0.95 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.6, delay, ease: slowEase } },
+  hidden: {
+    opacity: 0,
+    scale: 0.95,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      delay,
+      ease: slowEase as [number, number, number, number],
+    },
+  },
 });
 
 export default function AboutMe() {
