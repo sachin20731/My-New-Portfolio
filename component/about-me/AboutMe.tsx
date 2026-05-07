@@ -5,7 +5,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const slowEase = [0.22, 1, 0.36, 1];
+const slowEase = [0.22, 1, 0.36, 1] as const;
 
 const verticalLine = (delay: number, height: number) => ({
   hidden: { height: 0 },
