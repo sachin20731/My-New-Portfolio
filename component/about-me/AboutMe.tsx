@@ -887,12 +887,7 @@ export default function AboutMe() {
             ))}
           </div>
 
-          {/* Company logos */}
-          <div className="flex gap-6 mt-10">
-            <img src="/Cyber mas solutions.png" className="w-42 h-32 object-fit " />
-            <img src="/verlixtech.png" className="w-82 h-22 object-fit" />
-            <img src="/img3.png" className="w-32 h-32 object-cover border border-purple-500" />
-          </div>
+          
         </div>
       </div>
     </div>
