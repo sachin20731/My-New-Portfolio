@@ -937,9 +937,10 @@ export default function AboutMe() {
 
   return (
     <div
-      ref={sectionRef}
-      className="min-h-screen bg-[#1a191d] text-white px-4 py-12 md:px-16 md:py-16 overflow-hidden"
-    >
+        id="about-me"
+        ref={sectionRef}
+        className="min-h-screen bg-[#1a191d] text-white px-4 py-12 md:px-16 md:py-16 overflow-hidden"
+      >
       {/* Moving dot border animation styles */}
       <style jsx>{`
         @keyframes orbitDot {

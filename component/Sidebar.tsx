@@ -154,7 +154,7 @@ export default function Sidebar() {
   const navItems = [
     { id: "home", icon: <Home size={24} />, href: "#home" },
     { id: "about-me", icon: <User size={24} />, href: "#about-me" },
-    { id: "resume", icon: <FileText size={24} />, href: "#resume" },
+    { id: "resume", icon: <FileText size={24} />, href: "#Resume" },
     { id: "projects", icon: <Monitor size={24} />, href: "#projects" },
     { id: "certificates", icon: <Award size={24} />, href: "#certificates" },
     { id: "contact", icon: <Mail size={24} />, href: "#contact" },
