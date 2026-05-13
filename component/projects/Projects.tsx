@@ -174,8 +174,8 @@ export default function Projects() {
       description: "MPC Promo System is a digital promotional campaign management platform that generates unique promo codes and printable promo cards for customers. Users can submit these promo codes to the company for validation, and after successful verification, rewards are provided through mobile reloads or direct bank transfers based on the customer’s preference. The system also includes secure code validation, campaign tracking, user management, and real-time reporting features to ensure an efficient and reliable promotional process.",
       image: "/MPC.png",
       tags: ["React", "MongoDb", "express", "Tailwind"],
-      github: "https://github.com/example/nebula-ai",
-      live: "https://nebula-ai-demo.vercel.app",
+      github: "https://github.com/Mishan20/Promo_system_client",
+      
       featured: true
     },
     {
@@ -184,15 +184,15 @@ export default function Projects() {
       description: "E-commerce platform connecting local artisans with global buyers, featuring secure payments and inventory management.",
       image: "/aqua.png",
       tags: ["Wordpress","PHP","Elementor","Custom CSS","JS"],
-      github: "https://github.com/example/artisan-market",
+      
       live: "https://www.aquaengineering.lk",
       featured: false
     },
     {
       id: 3,
-      title: "FlowState Task Manager",
+      title: "BuildTrackPro - Construction Project Management Software (Ongoing)",
       description: "Minimalist productivity app with Pomodoro timer, task prioritization, and cross-device synchronization.",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format",
+      image: "/buildtrackpro.png",
       tags: ["Vue", "Vuex", "Firebase", "Tailwind"],
       github: "https://github.com/example/flowstate",
       live: "https://flowstate-app.vercel.app",
@@ -200,22 +200,22 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: "WeatherVane",
+      title: "CS Engineering and Service Website",
       description: "Beautiful weather application with animated backgrounds, 7-day forecasts, and interactive radar maps.",
-      image: "https://images.unsplash.com/photo-1592210454359-9046e3d163a4?w=800&auto=format",
+      image: "/cs-engineering.png",
       tags: ["React", "OpenWeather API", "Framer Motion", "Chart.js"],
-      github: "https://github.com/example/weathervane",
+      github: "https://github.com/VerlixTech/VTE00086---CS-Engineering",
       live: "https://weathervane-demo.vercel.app",
       featured: false
     },
     {
       id: 5,
-      title: "CodeCollab",
-      description: "Real-time collaborative code editor with syntax highlighting, video chat, and version control integration.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18a5?w=800&auto=format",
+      title: "Portfolio Website",
+      description: "This is the newest portfolio website of mine, built using Next.js and Tailwind CSS. It features a modern design, smooth animations, and responsive layout to showcase my projects and skills effectively.",
+      image: "/portfolio.png",
       tags: ["WebSocket", "Monaco Editor", "Express", "MongoDB"],
       github: "https://github.com/example/codecollab",
-      live: "https://codecollab-demo.vercel.app",
+      live: "https://dhanushka-personal-portfolio.vercel.app/",
       featured: false
     },
     {

@@ -161,9 +161,9 @@ export default function Sidebar() {
   ];
 
   const socialItems = [
-    { icon: <GithubIcon />, href: "#" },
+    { icon: <GithubIcon />, href: "https://github.com/sachin20731" },
     { icon: <FacebookIcon />, href: "#" },
-    { icon: <LinkedinIcon />, href: "#" },
+    { icon: <LinkedinIcon />, href: "www.linkedin.com/in/dhanushka-munasinghe-887311259" },
   ];
 
   useEffect(() => {
